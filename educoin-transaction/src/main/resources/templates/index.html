@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="box">
+            <div class="box-header">
+                <h3 class="box-title">周报管理</h3>
+
+                <div class="box-tools pull-left" style="display: flex;justify-content: flex-end;">
+                    <div class="col-md-5">
+                        <div class="input-group date ">
+                            <div class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            <input type="text" class="form-control pull-right" id="reportsTime"
+                                   placeholder="根据创建时间搜索...">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                            <input type="text" class="form-control" id="reportsPremise" placeholder="根据学号搜索...">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="submit" onclick="reportsReload();" class="btn btn-primary">搜索</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="box-body">
+                <table id="reports_tab" class="table table-bordered table-striped">
+                    <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>id</th>
+                        <th>学号</th>
+                        <th>姓名</th>
+                        <th>周数</th>
+                        <th>子项数</th>
+                        <th>状态</th>
+                        <th>提交时间</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

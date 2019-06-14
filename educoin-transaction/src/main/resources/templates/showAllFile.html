@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div>
+    <table border="1px" >
+        <tr> <td>index</td> <td>id</td> <td>name</td></tr>
+        <tr th:each="item: ${fileList}">
+            <td>[[${item.fileOwner}]]</td>
+            <td>[[${item.fileName}]]</td>
+            <td>[[${item.fileImage}]]</td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
